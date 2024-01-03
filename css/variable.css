@@ -1,0 +1,10 @@
+/* colors variables */
+:root {
+    --font: #FFF;
+    --font2: #000;
+
+    --colorHover: #aa5bf3;
+
+    --bgGray: #181818;
+    --bgGray2: #313131;
+}

@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    color: var(--font);
+    background-image: linear-gradient(to right top, #021025, #001743, #001961, #00177c, #180394);
+    background-repeat: no-repeat;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+::-webkit-scrollbar {
+    background-color: var(--bgGray);
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--bgGray2);
+    width: 6px;
+    border-radius: 4px;
+}
