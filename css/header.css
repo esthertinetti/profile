@@ -1,6 +1,6 @@
 .header {
     position: sticky;
-    top: 0;
+    top: -1px;
     transition: 300ms all;
     background: transparent;
     z-index: 10;
