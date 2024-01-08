@@ -1,0 +1,147 @@
+.formacao {
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.formacao .container {
+    padding-top: 60px;
+    position: relative;
+}
+
+.formacao .container::after {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 100px;
+    background: var(--colorHover);
+    position: absolute;
+    bottom: -50px;
+    left: 15px;
+}
+
+.formacao .subtitle {
+    color: var(--colorTitle);
+    opacity: 0.7;
+    max-width: 5ch;
+
+}
+
+.formacao-texto {
+    font-size: 1.5rem;
+    line-height: 1.33;
+    max-width: 40ch;
+    margin-bottom: 60px;
+    color: var(--font);
+}
+
+.formacao-lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 60px;
+}
+
+.formacao-faculdade {
+    flex: 1;
+    background: var(--bgGray);
+    padding: 20px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+}
+
+.formacao-tipo {
+    font-size: .875rem;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: var(--font3);
+}
+
+.formacao-nome {
+    flex: 1;
+    font-size: 1.125rem;
+    line-height: 1.4;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.formacao-nome::before { 
+    content: '';
+    display: block;
+    width: 4px;
+    height: 20px;
+    background: var(--colorHover);
+    position: absolute;
+    left: -24px;
+}
+
+.formacao-instituicao {
+    font-size: 1.125rem;
+    color: var(--font3);
+}
+
+.formacao-cursos {
+    margin-bottom: 60px;
+}
+
+.formacao-extra h3 {
+    font-size: 0.875rem;
+    line-height: 1.4;
+    color: var(--font4);
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.formacao-extra  h3::before {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: -36px;
+    top: -4px;
+}
+
+.formacao-cursos h3::before {
+    background: url("../img/cursos.svg") no-repeat center center;
+}
+
+.formacao-idiomas h3::before {
+    background: url("../img/idiomas.svg") no-repeat center center;
+}
+
+.formacao-extra li {
+    font-size: 1.125rem;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.formacao-extra span {
+    color: var(--font3);
+}
+
+.formacao-cursos li{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 800px) {
+    .formacao .container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding-bottom: 60px;
+    }
+
+    .formacao .subtitle {
+        opacity: 1;
+    }
+
+    .formacao-texto {
+        font-size: 1.25rem;
+    }
+
+    .formacao-extra h3::before {
+        position: initial;
+        margin-bottom: 10px;
+    }
+}
