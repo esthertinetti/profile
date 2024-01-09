@@ -3,14 +3,14 @@
 }
 
 .formacao .container {
-    padding-top: 60px;
+    padding: 60px 0;
     position: relative;
 }
 
 .formacao .container::after {
     content: '';
     display: block;
-    width: 20px;
+    width: 10px;
     height: 100px;
     background: var(--colorHover);
     position: absolute;
@@ -123,13 +123,19 @@
 .formacao-cursos li{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 1330px) {
+    .formacao .container {
+        padding: 60px 15px;
+    }
 }
 
 @media (max-width: 800px) {
     .formacao .container {
         grid-template-columns: 1fr;
         gap: 40px;
-        padding-bottom: 60px;
     }
 
     .formacao .subtitle {

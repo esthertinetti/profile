@@ -12,6 +12,12 @@ body[data-scroll-mode='down'] .header {
     background: var(--bgGray);
 }
 
+.header-name a,
+.header-name a:focus,
+.header-name a:visited {
+    color: var(--font);
+}
+
 .header-container {
     max-width: 1300px;
     margin: 0 auto;
